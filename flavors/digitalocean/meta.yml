@@ -1,4 +1,0 @@
-name: nocodb-latest-docker
-description: Deploy standard latest docker image of nocodb on a Digital Ocean droplet
-categories:
-- Marketing
