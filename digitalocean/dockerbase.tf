@@ -36,44 +36,37 @@ variable "webmaster_email" {
 
 resource "random_password" "jwt_secret" {
   length           = 16
-  special          = true
-  override_special = "_%@"
+  special          = false
 }
 
 resource "random_password" "minio_access_key" {
   length           = 16
-  special          = true
-  override_special = "_%@"
+  special          = false
 }
 
 resource "random_password" "minio_secret_key" {
   length           = 16
-  special          = true
-  override_special = "_%@"
+  special          = false
 }
 
 resource "random_password" "couch_db_password" {
   length           = 16
-  special          = true
-  override_special = "_%@"
+  special          = false
 }
 
 resource "random_password" "couch_db_user" {
   length           = 16
-  special          = true
-  override_special = "_%@"
+  special          = false
 }
 
 resource "random_password" "redis_password" {
   length           = 16
-  special          = true
-  override_special = "_%@"
+  special          = false
 }
 
 resource "random_password" "internal_api_key" {
   length           = 16
-  special          = true
-  override_special = "_%@"
+  special          = false
 }
 
 resource "digitalocean_droplet" "www-budibase" {
